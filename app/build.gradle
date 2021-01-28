@@ -7,6 +7,7 @@
  */
 
 plugins {
+    id 'java'
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 }
@@ -14,7 +15,10 @@ plugins {
 repositories {
     // Use JCenter for resolving dependencies.
     jcenter()
+    mavenCentral()
 }
+
+
 
 dependencies {
     // Use JUnit Jupiter API for testing.
@@ -25,6 +29,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+
 }
 
 application {
